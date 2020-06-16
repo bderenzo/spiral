@@ -1,4 +1,4 @@
-# Nano Blog
+# Spiral
 
 ## Installation
 
