@@ -1,0 +1,115 @@
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family:segoe ui,Roboto,Oxygen-Sans,Ubuntu,Cantarell,helvetica neue,Verdana,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+  margin: auto;
+  padding: 20px;
+  max-width: 720px;
+  text-align: left;
+  word-wrap: break-word; 
+  overflow-wrap: break-word;
+}
+
+header img {
+  display: inline-block;
+  margin-right: 10px;
+}
+header h2 {
+  display: inline-block;
+  vertical-align: super;
+}
+
+a {
+  color: #3273dc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #004669;
+}
+
+h2 a {
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+}
+
+nav a {
+  margin-right: 10px;
+}
+
+p {
+  text-align: justify;
+}
+
+hr {
+  text-align: center;
+  border: none;
+}
+
+hr:before {
+  content:"***";
+  letter-spacing: 1em;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  padding: 7px 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+img + em {
+  margin-top: 10px;
+  display: inherit;
+  text-align: center;
+  font-size: 90%;
+  color: #808080;
+}
+
+code {
+  padding: 2px 4px;
+  color: #dd0011;
+  font-size: 110%;
+}
+
+pre code {
+  color: inherit;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  padding: 15px;
+  white-space: pre-wrap;
+  display: block;
+}
+
+blockquote {
+  border-left: 1px solid #ddd;
+  padding-left: 10px;
+  font-style: italic;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+}
