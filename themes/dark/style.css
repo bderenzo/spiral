@@ -100,10 +100,9 @@ code {
 pre code {
   color: inherit;
   background-color: #1c1c1c;
-  border: 1px solid #313131;
   padding: 15px;
-  white-space: pre-wrap;
   display: block;
+  overflow-x: auto;
 }
 
 blockquote {
