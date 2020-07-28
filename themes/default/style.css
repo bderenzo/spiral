@@ -13,15 +13,7 @@ body {
   overflow-wrap: break-word;
 }
 
-header img {
-  display: inline-block;
-  margin-right: 10px;
-}
-header h2 {
-  display: inline-block;
-  vertical-align: super;
-}
-
+/* links */
 a {
   color: #3273dc;
   text-decoration: none;
@@ -31,20 +23,43 @@ a:hover {
   color: #004669;
 }
 
-h2 a {
-  font-weight: 400;
-  color: #000;
-  text-decoration: none;
+/* navigation bar */
+nav {
+  float: right;
 }
 
 nav a {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
+/* titles */
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 500;
+}
+
+h1 {
+  text-align:center;
+  padding: 40px;
+}
+
+h1 + ul {
+  list-style-type: none;
+  padding: 0px;
+  line-height: 1.65;
+}
+
+/* articles list */
+li time {
+  float: right;
+  color: gray;
+}
+
+/* article content */
 p {
   text-align: justify;
 }
 
+/* line break */
 hr {
   text-align: center;
   border: none;
@@ -55,6 +70,7 @@ hr:before {
   letter-spacing: 1em;
 }
 
+/* table */
 table {
   width: 100%;
 }
@@ -65,21 +81,25 @@ td {
   text-align: left;
   border-bottom: 1px solid #ddd;
 }
+
 th:first-child,
 td:first-child {
   padding-left: 0;
 }
+
 th:last-child,
 td:last-child {
   padding-right: 0;
 }
 
+/* image and caption */
 img {
   max-width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
 img + em {
   margin-top: 10px;
   display: inherit;
@@ -88,6 +108,7 @@ img + em {
   color: #808080;
 }
 
+/* code */
 code {
   padding: 2px 4px;
   color: #dd0011;
@@ -102,13 +123,16 @@ pre code {
   overflow-x: auto;
 }
 
+/* quote */
 blockquote {
   border-left: 1px solid #ddd;
   padding-left: 10px;
   font-style: italic;
 }
 
+/* footer */
 footer {
   padding: 25px;
   text-align: center;
 }
+

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # vars
 config='./site.conf'
@@ -9,10 +9,10 @@ tmpcatdir="${tmpdir}/category"
 
 # functions
 die(){ echo "$*" >&2; exit 1; }
+lower(){ echo "$*" | tr 'A-Z' 'a-z'; }
 get(){ sed '/^-*-*-/q' "${2}" | grep "^${1}:" | cut -d':' -f2- | xargs; }
 addtocat(){ ${chronological} && echo "${1}" >> "${2}" || sed "1 a\\${1}" -i "${2}"; }
-lower(){ echo "$*" | tr 'A-Z' 'a-z'; }
-fdate(){ ${showdate} && echo "$*" | sed -E 's,([0-9]{4})([0-9]{2})([0-9]{2}),\3/\2/\1 - ,'; }
+fdate(){ ${showdate} && echo "$*" | sed -E 's,([0-9]{4})([0-9]{2})([0-9]{2}),<time>\3/\2/\1</time>,'; }
 mkmd(){ [ "${1}" == '-s' ] && sed '0,/^-*-*-/d' "${2}" | ${mdparser} || cat "${@}" | ${mdparser}; }
 
 navhtml(){
