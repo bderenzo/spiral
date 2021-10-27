@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # default values
-host='127.0.0.1' port='8888' dir='./static'
+host='0.0.0.0' port='8888' dir='./static'
 
 usage(){
     echo "Usage: $(basename "$0") [-H HOST] [-p PORT] [-d DIR]"
